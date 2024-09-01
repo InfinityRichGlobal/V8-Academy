@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V8 Startup Academy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .container {
+            text-align: center;
+            max-width: 100%; /* Control max width */
+            margin: auto;
+        }
+
+
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button-container {
+            margin: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(45deg, #ff6b6b, #f06595);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, color 0.3s;
+            cursor: pointer;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.4s;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .button:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .button:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://lh3.googleusercontent.com/d/14p3lZidpQd_YB72zQ2tTNHUgY4xI9Rfn" alt="Image">
+        </div>
+        <div class="button-container">
+            <a href="https://www.facebook.com/groups/496926652321310" class="button">เข้ารับการเรียนรู้</a>
+        </div>
+    </div>
+</body>
+</html>
